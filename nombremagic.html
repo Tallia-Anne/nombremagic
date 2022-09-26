@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir le nombre magique</title>
+
+    <style>
+    body {  
+    background-color: rgb(254, 254, 254);
+}
+        form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h4, p {
+    text-align: center;
+}
+    .form-magic {
+    margin: auto;
+    width: 24%;
+    border-radius: 12px;
+    padding: 31px;
+    box-shadow: 1px 3px 6px #b7b1b1;
+    margin-top: 104px
+    }
+
+        .form-input {
+        padding-bottom: 20px;
+    }
+
+
+    input[type=number ] {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 2px solid black;
+}
+
+      input[type=submit ] {
+            padding: 12px 62px;
+            background-image: linear-gradient(to right, #cb2f99 , #ec5aca  0%, #ff00c3  100%);
+            border-radius: 7px;
+            border: none;
+            box-shadow: 1px 1px 1px #cef1ee;;
+            color: white;
+        }
+        .bravo {
+        background-color: green;
+        color: white;
+    }
+    .echec {
+        background-color: #ff0000;
+        color: white;
+        height: 70px;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="form-magic">
+    <h4>Numéro Magique</h4>
+    <p>Trouvrer le nombre magique et veillez inserer un chiffre. <br> Bonne chance </p>
+ <form action="" method="post">
+    <div class="form-input">
+   
+    <input type="number" name="nb1" id="nb1">
+</div>
+<div class="form-input">
+      <input type="submit" id="submit" value="Confirmer"  > 
+</div>
+</form>
+        <div id="content"></div>
+       
+</div>
+ <script src="nbrmagic.js"></script>
+</body>
+</html>
